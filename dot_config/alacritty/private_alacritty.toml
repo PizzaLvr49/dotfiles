@@ -2,8 +2,7 @@
 import = ["/home/pizza/.config/alacritty/dank-theme.toml"]
 
 [terminal.shell]
-program = "/usr/bin/nu"
-args = []
+program = "zellij"
 
 [window]
 opacity = 0.5
