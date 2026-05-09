@@ -1,0 +1,10 @@
+[general]
+import = ["/home/pizza/.config/alacritty/dank-theme.toml"]
+
+[terminal.shell]
+program = "/usr/bin/nu"
+args = []
+
+[window]
+opacity = 0.5
+decorations = "none"
