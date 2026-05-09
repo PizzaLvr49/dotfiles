@@ -1,6 +1,6 @@
 {
-  "currentThemeName": "purple",
-  "currentThemeCategory": "generic",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
   "customThemeFile": "",
   "registryThemeVariants": {},
   "matugenScheme": "scheme-tonal-spot",
@@ -14,7 +14,7 @@
   "buttonColorMode": "primary",
   "cornerRadius": 12,
   "niriLayoutGapsOverride": -1,
-  "niriLayoutRadiusOverride": -1,
+  "niriLayoutRadiusOverride": 12,
   "niriLayoutBorderSize": -1,
   "hyprlandLayoutGapsOverride": -1,
   "hyprlandLayoutRadiusOverride": -1,
@@ -36,14 +36,14 @@
   "modalAnimationSpeed": 1,
   "modalCustomAnimationDuration": 150,
   "enableRippleEffects": true,
-  "blurEnabled": true,
+  "blurEnabled": false,
   "blurForegroundLayers": true,
   "blurLayerOutlineOpacity": 0.12,
   "blurBorderColor": "outline",
   "blurBorderCustomColor": "#ffffff",
   "blurBorderOpacity": 0.35,
   "wallpaperFillMode": "Fill",
-  "blurredWallpaperLayer": true,
+  "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": true,
   "showLauncherButton": true,
   "showWorkspaceSwitcher": true,
@@ -272,7 +272,7 @@
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
-  "terminalsAlwaysDark": false,
+  "terminalsAlwaysDark": true,
   "muxType": "tmux",
   "muxUseCustomCommand": false,
   "muxCustomCommand": "",
@@ -417,19 +417,34 @@
       "id": "default",
       "name": "Main Bar",
       "enabled": true,
-      "position": 0,
+      "position": 2,
       "screenPreferences": [
         "all"
       ],
       "showOnLastDisplay": true,
       "leftWidgets": [
-        "workspaceSwitcher",
-        "focusedWindow"
+        {
+          "id": "music",
+          "enabled": true
+        },
+        {
+          "id": "clock",
+          "enabled": true
+        },
+        {
+          "id": "weather",
+          "enabled": true
+        },
+        {
+          "id": "systemUpdate",
+          "enabled": true
+        }
       ],
       "centerWidgets": [
-        "music",
-        "clock",
-        "weather"
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        }
       ],
       "rightWidgets": [
         {
@@ -438,24 +453,6 @@
         },
         {
           "id": "clipboard",
-          "enabled": true
-        },
-        {
-          "id": "diskUsage",
-          "enabled": true,
-          "mountPath": "/"
-        },
-        {
-          "id": "cpuUsage",
-          "enabled": true
-        },
-        {
-          "id": "cpuTemp",
-          "enabled": true,
-          "minimumWidth": true
-        },
-        {
-          "id": "memUsage",
           "enabled": true
         },
         {
@@ -471,18 +468,18 @@
           "enabled": true
         }
       ],
-      "spacing": 4,
+      "spacing": 0,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 1,
-      "widgetTransparency": 1,
-      "squareCorners": false,
+      "transparency": 0.5,
+      "widgetTransparency": 0.5,
+      "squareCorners": true,
       "noBackground": false,
       "maximizeWidgetIcons": false,
       "maximizeWidgetText": false,
       "removeWidgetPadding": false,
       "widgetPadding": 8,
-      "gothCornersEnabled": false,
+      "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
