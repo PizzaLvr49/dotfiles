@@ -631,8 +631,42 @@
   ],
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
-  "desktopWidgetGridSettings": {},
-  "desktopWidgetInstances": [],
+  "desktopWidgetGridSettings": {
+    "eDP-1": {
+      "enabled": true,
+      "size": 200
+    }
+  },
+  "desktopWidgetInstances": [
+    {
+      "id": "dw_1778344960152_df4nmhgf3",
+      "widgetType": "desktopClock",
+      "name": "Desktop Clock",
+      "enabled": true,
+      "config": {
+        "style": "digital",
+        "transparency": 0,
+        "colorMode": "secondary",
+        "customColor": "#ffffff",
+        "showDate": false,
+        "showAnalogNumbers": false,
+        "showAnalogSeconds": true,
+        "displayPreferences": [
+          "all"
+        ],
+        "showOnOverlay": false,
+        "clickThrough": true
+      },
+      "positions": {
+        "eDP-1": {
+          "width": 800,
+          "height": 400,
+          "x": 600,
+          "y": 400
+        }
+      }
+    }
+  ],
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {
