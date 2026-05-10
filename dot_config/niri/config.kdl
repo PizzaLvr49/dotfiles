@@ -106,12 +106,15 @@ input {
     position x=1280 y=0
 }
 
-// this in conjuction with dms blur enabled but manually disables blur gives the right geometry but with no blur and with xray
 layer-rule {
-    match namespace="^dms:bar$"
-
     background-effect {
+        xray false
         blur false
+    }
+}
+layer-rule {
+    match namespace=r#"^dms:bar$"#
+    background-effect {
         xray true
     }
 }
