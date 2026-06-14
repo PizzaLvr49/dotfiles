@@ -5,6 +5,13 @@ output "eDP-1" {
     scale 1
     position x=0 y=0
     variable-refresh-rate on-demand=true
+}
+
+output "DP-3" {
+    mode "2560x1080@200.000"
+    scale 1
+    position x=0 y=0
+    variable-refresh-rate on-demand=true
     layout {
         always-center-single-column
     }

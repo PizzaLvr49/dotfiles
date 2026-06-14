@@ -106,12 +106,29 @@ input {
     position x=1280 y=0
 }
 
+debug {
+    wait-for-frame-completion-before-queueing true
+}
+
+window-rule {
+    background-effect {
+        xray true
+    }
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+
 layer-rule {
     background-effect {
         xray false
         blur false
     }
 }
+
 layer-rule {
     match namespace=r#"^dms:bar$"#
     background-effect {
@@ -406,6 +423,9 @@ binds {
     Mod+O repeat=false { toggle-overview; }
 
     Mod+Q repeat=false { close-window; }
+
+    // autoclicker I made
+    Mod+A { spawn "~/Projects/toggle-autoclicker.sh"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }

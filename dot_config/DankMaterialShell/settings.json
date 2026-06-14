@@ -1,6 +1,6 @@
 {
-  "currentThemeName": "dynamic",
-  "currentThemeCategory": "dynamic",
+  "currentThemeName": "purple",
+  "currentThemeCategory": "generic",
   "customThemeFile": "",
   "registryThemeVariants": {},
   "matugenScheme": "scheme-tonal-spot",
@@ -456,6 +456,12 @@
   "niriOutputSettings": {
     "eDP-1": {
       "vrrOnDemand": true
+    },
+    "DP-3": {
+      "vrrOnDemand": true,
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      }
     }
   },
   "hyprlandOutputSettings": {},
@@ -491,6 +497,10 @@
         {
           "id": "systemUpdate",
           "enabled": true
+        },
+        {
+          "id": "dankKDEConnect",
+          "enabled": true
         }
       ],
       "centerWidgets": [
@@ -513,10 +523,6 @@
           "enabled": true
         },
         {
-          "id": "battery",
-          "enabled": true
-        },
-        {
           "id": "controlCenterButton",
           "enabled": true
         }
@@ -524,7 +530,7 @@
       "spacing": 0,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.5,
+      "transparency": 0.01,
       "widgetTransparency": 0,
       "squareCorners": true,
       "noBackground": false,
@@ -635,6 +641,10 @@
     "eDP-1": {
       "enabled": true,
       "size": 200
+    },
+    "DP-3": {
+      "enabled": true,
+      "size": 160
     }
   },
   "desktopWidgetInstances": [
@@ -655,7 +665,9 @@
           "all"
         ],
         "showOnOverlay": false,
-        "clickThrough": true
+        "clickThrough": true,
+        "showOnOverview": false,
+        "showDigitalSeconds": false
       },
       "positions": {
         "eDP-1": {
@@ -663,6 +675,12 @@
           "height": 400,
           "x": 600,
           "y": 400
+        },
+        "DP-3": {
+          "width": 960,
+          "height": 320,
+          "x": 800,
+          "y": 320
         }
       }
     }
@@ -674,7 +692,11 @@
     }
   },
   "clipboardEnterToPaste": false,
-  "launcherPluginVisibility": {},
+  "launcherPluginVisibility": {
+    "dms_settings_search": {
+      "allowWithoutTrigger": true
+    }
+  },
   "launcherPluginOrder": [],
   "frameEnabled": false,
   "frameThickness": 16,
