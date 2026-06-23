@@ -501,6 +501,10 @@
         {
           "id": "dankKDEConnect",
           "enabled": true
+        },
+        {
+          "id": "dockerManager",
+          "enabled": true
         }
       ],
       "centerWidgets": [
