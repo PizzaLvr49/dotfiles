@@ -1,6 +1,6 @@
 {
-  "currentThemeName": "purple",
-  "currentThemeCategory": "generic",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
   "customThemeFile": "",
   "registryThemeVariants": {},
   "matugenScheme": "scheme-tonal-spot",
@@ -685,6 +685,35 @@
           "height": 320,
           "x": 800,
           "y": 320
+        }
+      }
+    },
+    {
+      "id": "dw_1782240517705_borrfy188",
+      "widgetType": "activateLinux",
+      "name": "Activate Linux Watermark",
+      "enabled": true,
+      "config": {
+        "displayPreferences": [
+          "all"
+        ],
+        "showOnOverview": true,
+        "showOnOverlay": true,
+        "clickThrough": true,
+        "syncPositionAcrossScreens": true
+      },
+      "positions": {
+        "DP-3": {
+          "width": 400,
+          "height": 200,
+          "x": 2160,
+          "y": 880
+        },
+        "_synced": {
+          "x": 0.84375,
+          "y": 0.8148148148148148,
+          "width": 400,
+          "height": 200
         }
       }
     }
